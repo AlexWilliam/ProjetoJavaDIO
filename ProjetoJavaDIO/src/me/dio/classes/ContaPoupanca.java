@@ -2,20 +2,13 @@ package me.dio.classes;
 
 public class ContaPoupanca extends Conta {
 
-
-    @Override
-    public void sacar(double valor) {
-
+    public ContaPoupanca(Cliente titular) {
+        super(titular);
     }
 
     @Override
-    public void depositar(double valor) {
-
+    public void imprimirExtrato(){
+        System.out.println("=== Extrato Conta Poupança ===");
+        System.out.println(this.toString());
     }
-
-    @Override
-    public void transferir(double valor, Conta contaDestino) {
-
-    }
-
 }
